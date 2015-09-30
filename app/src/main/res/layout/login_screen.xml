@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F18180" >
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txt_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BeautyLaps"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:typeface="sans"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_2"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/img_facebook"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/facebook_login" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/img_gplus"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/google_login"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/img_twitter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/twitter_login"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
